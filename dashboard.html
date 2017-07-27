@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Edge &amp; M4C Dashboard</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Paper Dashboard core CSS    -->
+    <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+
+
+    <!--  Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-background-color="white" data-active-color="info">
+
+    <!--
+		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+	-->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="http://www.edge.com.bd/" class="simple-text">
+                    <img src="assets/img/background/logo-up.png" width="100px">
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="active">
+                    <a href="dashboard.html">
+                        <i class="ti-panel"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li >
+                    <a href="user.html">
+                        <i class="ti-user"></i>
+                        <p>Welfare Officers</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="beneficiary.html">
+                        <i class="ti-heart"></i>
+                        <p>Beneficiary</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="add_form.html">
+                        <i class="ti-bookmark"></i>
+                        <p>Joint Form</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <i class="ti-lock"></i>
+                        <p>Sign Out</p>
+                    </a>
+                </li>
+                
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Microloan Dashboard</a>
+                </div>
+               <div class="collapse navbar-collapse">
+                  <!--    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="ti-panel"></i>
+								<p>Stats</p>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                    <p class="notification">5</p>
+									<p>Notifications</p>
+									<b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Notification 1</a></li>
+                                <li><a href="#">Notification 2</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Another notification</a></li>
+                              </ul>
+                        </li>
+						<li>
+                            <a href="#">
+								<i class="ti-settings"></i>
+								<p>Settings</p>
+                            </a>
+                        </li>
+                    </ul>-->
+
+                </div> 
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-danger text-center">
+                                            <i class="ti-money"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p style="font-size: 8pt">Total</p>
+                                            <p style="font-weight: 600;">Beneficiary</p>
+                                            <span style="font-size: 15px">50,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-success text-center">
+                                            <i class="ti-files"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p style="font-size: 8pt">Total</p>
+                                            <p style="font-weight: 600;">Loan Dispatch</p>
+                                            <span style="font-size: 15px">$3,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-3 col-sm-3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-warning text-center">
+                                            <i class="ti-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p style="font-size: 8pt">Total</p>
+                                            <p style="font-weight: 600;">Collected</p>
+                                            <span style="font-size: 15px">$1,460,295</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-info text-center">
+                                            <i class="ti-file"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p style="font-size: 8pt">Total</p>
+                                            <p style="font-weight: 600;">Due</p>
+                                            <span style="font-size: 15px">$1,350,455</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                    <div class="row">
+
+                     <div class="col-lg-6 col-sm-6">
+                        <div class="card" >
+                            <div class="content">
+                              
+                            <div class="row" style="margin-bottom: 6px;">
+                            <div class="col-lg-8">
+                            <div class="form-group" style="margin-bottom: 37px;">
+                            <label>Select Date :</label> <br>
+                            <input type="date" name="pickaDate" class="dateFix">                    
+                            </div>
+
+                            </div>
+                            <div class="col-lg-3">
+                             <div class="input-group">
+
+                                <button class="btn btn-md btn-fill btn-info"  id="filter" style="padding: 7% 20% 7% 20%; margin-top: 25px;"><i class="ti-filter"></i> &nbsp;Filter</button>
+
+                                
+
+                            </div>
+                            </div>
+
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6" id ="division">
+                        <div class="card" >
+                            <div class="content">
+                              
+                            <div class="row" style="margin-bottom: 6px;">
+                            <div class="col-lg-8">
+                            <div class="form-group" style="margin-bottom: 37px;">
+                                                <label>Select Area :</label> <br>
+                                                <select>
+                                                      <option value="FTE">Overall</option>
+                                                      <option value="ODE">Dhaka</option>
+                                                      <option value="PTE">Chittagonj</option>
+                                                      <option value="PTE">Sylhet</option>
+                                                </select>
+                            </div>
+
+                            </div>
+                            <div class="col-lg-3">
+                             <div class="input-group">
+
+                                <button class="btn btn-md btn-fill btn-info"  id="filter2" style="padding: 7% 20% 7% 20%; margin-top: 25px;"><i class="ti-filter"></i> &nbsp;Filter</button>
+
+                                
+
+                            </div>
+                            </div>
+
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- date picker ends-->
+                    <div class="col-lg-3 col-sm-6" id="date_picker1">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-danger text-center">
+                                            <i class="ti-money"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p style="font-size: 8pt">Till 12 May 2017, Dhaka's</p>
+                                            <p style="font-weight: 600;">Total Beneficiary</p>
+                                            <span style="font-size: 18px">45000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                      <div class="col-lg-3 col-sm-6" id="date_picker2">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-success text-center">
+                                            <i class="ti-files"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p style="font-size: 8pt">Till 12 May 2017, Dhaka's</p>
+                                            <p style="font-weight: 600;">Loan Dispatch</p>
+                                            <span style="font-size: 18px">$2,450,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                      <div class="col-lg-3 col-sm-6" id="date_picker3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-warning text-center">
+                                            <i class="ti-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p style="font-size: 8pt">Till 12 May 2017, Dhaka's</p>
+                                            <p style="font-weight: 600;">Total Collected</p>
+                                            <span style="font-size: 18px">$1,250,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-3 col-sm-6" id="date_picker4">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-info text-center">
+                                            <i class="ti-file"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p style="font-size: 8pt">Till 12 May 2017, Dhaka's</p>
+                                            <p style="font-weight: 600;">Total Due</p>
+                                            <span style="font-size: 18px">$1,250,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+
+
+                
+                     <div class="row">
+
+                   <!--  <div class="col-md-12" id="study_track01">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Number Of Surveys</h4>
+                                <p class="category">Target/Completed Comparison Per Day by all Enumerators </p>
+                            </div>
+                            <div class="content">
+                                <div id="chart_pie_enum_targetvsdone" class="ct-chart"></div>
+                                <div class="footer">
+                                    <div class="chart-legend">
+                                        <i class="fa fa-circle text-info"></i> Target Surveys
+                                        <i class="fa fa-circle text-warning"></i> Completed Surveys
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated 3 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="content">
+            <div class="container-fluid">
+                <div class="card card-map">
+                    <div class="header">
+                        <h4 class="title">Division Wise Loan Dispatch Locations : </h4>
+                    </div>
+                    <div class="map">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--     <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Users Behavior</h4>
+                                <p class="category">24 Hours performance</p>
+                            </div>
+                            <div class="content">
+                                <div id="chartHours" class="ct-chart"></div>
+                                <div class="footer">
+                                    <div class="chart-legend">
+                                        <i class="fa fa-circle text-info"></i> Open
+                                        <i class="fa fa-circle text-danger"></i> Click
+                                        <i class="fa fa-circle text-warning"></i> Click Second Time
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="ti-reload"></i> Updated 3 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Email Statistics</h4>
+                                <p class="category">Last Campaign Performance</p>
+                            </div>
+                            <div class="content">
+                                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+
+                                <div class="footer">
+                                    <div class="chart-legend">
+                                        <i class="fa fa-circle text-info"></i> Open
+                                        <i class="fa fa-circle text-danger"></i> Bounce
+                                        <i class="fa fa-circle text-warning"></i> Unsubscribe
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="ti-timer"></i> Campaign sent 2 days ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card ">
+                            <div class="header">
+                                <h4 class="title">2015 Sales</h4>
+                                <p class="category">All products including Taxes</p>
+                            </div>
+                            <div class="content">
+                                <div id="chartActivity" class="ct-chart"></div>
+
+                                <div class="footer">
+                                    <div class="chart-legend">
+                                        <i class="fa fa-circle text-info"></i> Tesla Model S
+                                        <i class="fa fa-circle text-warning"></i> BMW 5 Series
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="ti-check"></i> Data information certified
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+
+                        <li>
+                            <a href="http://www.edge.com.bd/">
+                                Edge Consulting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.edge.com.bd/index.php/main/current_protfolio">
+                               Current Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.creative-tim.com/license">
+                                Licenses
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright pull-right">
+                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Edge Consulting</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="assets/js/bootstrap-checkbox-radio.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+	<script src="assets/js/paper-dashboard.js"></script>
+
+	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+
+	<script type="text/javascript">
+    	$(document).ready(function(){
+
+        	demo.initChartist();
+             demo.initGoogleMaps();
+
+            $( "#date_picker1" ).hide();
+            $( "#date_picker2" ).hide();
+            $( "#date_picker3" ).hide();
+            $( "#date_picker4" ).hide();
+            $( "#division" ).hide();
+
+
+             $( "#filter" ).click(function() {
+                $( "#division" ).fadeIn();              
+            });
+            $( "#filter2" ).click(function() {
+                $( "#date_picker1" ).fadeIn(); 
+                $( "#date_picker2" ).fadeIn();
+                $( "#date_picker3" ).fadeIn();
+                $( "#date_picker4" ).fadeIn();
+
+            });
+        	// $.notify({
+         //    	icon: 'ti-gift',
+         //    	message: "Welcome to <b>Paper Dashboard</b> - a beautiful Bootstrap freebie for your next project."
+
+         //    },{
+         //        type: 'success',
+         //        timer: 4000
+         //    });
+
+    	});
+	</script>
+
+</html>

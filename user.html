@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Welfare Officers Information</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Paper Dashboard core CSS    -->
+    <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--  Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="sidebar" data-background-color="white" data-active-color="info">
+
+    <!--
+		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+	-->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="http://www.edge.com.bd/" class="simple-text">
+                    <img src="assets/img/background/logo-up.png" width="100px">
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="dashboard.html">
+                        <i class="ti-panel"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="user.html">
+                        <i class="ti-user"></i>
+                        <p>Welfare Officers</p>
+                    </a>
+                </li>
+                <li >
+                    <a href="beneficiary.html">
+                        <i class="ti-heart"></i>
+                        <p>Beneficiary</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="add_form.html">
+                        <i class="ti-bookmark"></i>
+                        <p>Joint Form</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <i class="ti-lock"></i>
+                        <p>Sign Out</p>
+                    </a>
+                </li>
+                
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+		<nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Welfare Officers Information</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <!-- <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="ti-panel"></i>
+								<p>Stats</p>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                    <p class="notification">5</p>
+									<p>Notifications</p>
+									<b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Notification 1</a></li>
+                                <li><a href="#">Notification 2</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Another notification</a></li>
+                              </ul>
+                        </li>
+						<li>
+                            <a href="#">
+								<i class="ti-settings"></i>
+								<p>Settings</p>
+                            </a>
+                        </li>
+                    </ul> -->
+
+                </div>
+            </div>
+        </nav>
+
+         
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                 <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Enumerators Information</h4>
+                                <p class="category">See Enumerators status here</p>
+                            </div>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th>Name</th>
+                                        <th>Job Position</th>
+                                        <th>Active Area</th>
+                                        <th>View Profile</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tanvir Hayder</td>
+                                            <td>Welfare Officer</td>
+                                            <td>Gazipur</td>
+                                            <td><button class="btn btn-sm btn-info" id="btn-1">View Profile</button></td>
+                                        </tr>
+                                      <tr>
+                                            <td>Fahmidul Hasan</td>
+                                            <td>Welfare Officer</td>
+                                            <td>Gazipur</td>
+                                            <td><button class="btn btn-sm btn-info" id="btn-2">View Profile</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tahmid Alam</td>
+                                            <td>Welfare Officer</td>
+                                            <td>Gazipur</td>
+                                            <td><button class="btn btn-sm btn-info" id="btn-3">View Profile</button></td>
+                                        </tr>
+                                         <tr>
+                                            <td>Sakib Shadman</td>
+                                            <td>Welfare Officer</td>
+                                            <td>Gaibandha</td>
+                                            <td><button class="btn btn-sm btn-info" id="btn-3">View Profile</button></td>
+                                        </tr>
+                                         <tr>
+                                            <td>Maqsud Ul Anwar</td>
+                                            <td>Welfare Officer</td>
+                                            <td>Kurigram</td>
+                                            <td><button class="btn btn-sm btn-info" id="btn-3">View Profile</button></td>
+                                        </tr>
+                                         <tr>
+                                            <td>Navan Tanjeem</td>
+                                            <td>Welfare Officer</td>
+                                            <td>Shirajgonj</td>
+                                            <td><button class="btn btn-sm btn-info" id="btn-3">View Profile</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-offset-1 col-lg-10 col-md-10" id="btn-1-id">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="assets/img/background.jpg" alt="..."/>
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                  <img class="avatar border-white" src="assets/img/faces/face-1.jpg" alt="..."/>
+                                  <h4 class="title">Tanvir Hayder<br />
+                                     <a href="#"><small>@tanvirHyd</small></a>
+                                  </h4>
+                                </div>
+                                <div class="content table-responsive table-full-width">
+                                <table class="table table-hover">
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <th>PHONE :</th>
+                                            <td>+880 167 471 4980</td>
+                                        </tr>
+                                        <tr>
+                                            <th>NID :</th>
+                                            <td>378462482364827</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ADDRESS :</th>
+                                            <td>Basundha RA, Dhaka, Bangladesh</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Doing Date :</th>
+                                            <td>05 April 2017</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Active Area:</th>
+                                            <td>Dhaka</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div>
+                      
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <h5>$13500<br /><small>Loan Dispatched</small></h5>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>$58467<br /><small>Loan Collected</small></h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>$1247<br /><small>Loan Due</small></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+
+                     <div class="col-lg-offset-1 col-lg-10 col-md-10" id="btn-2-id">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="assets/img/background3.jpg" alt="..."/>
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                  <img class="avatar border-white" src="assets/img/faces/face-3.jpg" alt="..."/>
+                                  <h4 class="title">Fahmidul Hasan<br />
+                                     <a href="#"><small>@fahmidH</small></a>
+                                  </h4>
+                                </div>
+                                <div class="content table-responsive table-full-width">
+                                <table class="table table-hover">
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <th>PHONE :</th>
+                                            <td>+880 167 471 4980</td>
+                                        </tr>
+                                        <tr>
+                                            <th>NID :</th>
+                                            <td>378462482364827</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ADDRESS :</th>
+                                            <td>Basundha RA, Dhaka, Bangladesh</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Doing Date :</th>
+                                            <td>05 April 2017</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Active Area:</th>
+                                            <td>Dhaka</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div>
+                      
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <h5>$16500<br /><small>Loan Dispatched</small></h5>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>$68467<br /><small>Loan Collected</small></h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>$1257<br /><small>Loan Due</small></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                     <div class="col-lg-offset-1 col-lg-10 col-md-10" id="btn-3-id">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="assets/img/background2.jpg" alt="..."/>
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                  <img class="avatar border-white" src="assets/img/faces/face-2.jpg" alt="..."/>
+                                  <h4 class="title">Tahmid Alam<br />
+                                     <a href="#"><small>@pashaTahmid</small></a>
+                                  </h4>
+                                </div>
+                                <div class="content table-responsive table-full-width">
+                                <table class="table table-hover">
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <th>PHONE :</th>
+                                            <td>+880 167 471 5980</td>
+                                        </tr>
+                                        <tr>
+                                            <th>NID :</th>
+                                            <td>378462482364827</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ADDRESS :</th>
+                                            <td>Basundha RA, Dhaka, Bangladesh</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Doing Date :</th>
+                                            <td>05 April 2017</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Active Area:</th>
+                                            <td>Dhaka</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div>
+                      
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <h5>$13500<br /><small>Loan Dispatched</small></h5>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>$58467<br /><small>Loan Collected</small></h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>$1247<br /><small>Loan Due</small></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+
+                   
+                    <div class="col-lg-12 col-md-7" id="add_user_id">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Add Profile</h4>
+                            </div>
+                            <div class="content">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label>Company Name</label>
+                                                <input type="text" class="form-control border-input" placeholder="Company" value="Edge Consulting">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>Username</label>
+                                                <input type="text" class="form-control border-input" placeholder="Username" value="jamilAkbar">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control border-input" placeholder="Provide Your Email">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>First Name</label>
+                                                <input type="text" class="form-control border-input" placeholder="Company" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Last Name</label>
+                                                <input type="text" class="form-control border-input" placeholder="Last Name" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Address</label>
+                                                <input type="text" class="form-control border-input" placeholder="Home Address" value="Dhaka, Bangladesh">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>City</label>
+                                                <input type="text" class="form-control border-input" placeholder="City" value="Dhaka">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Country</label>
+                                                <input type="text" class="form-control border-input" placeholder="Country" value="Bangladesh">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Postal Code</label>
+                                                <input type="number" class="form-control border-input" placeholder="ZIP Code">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>About Me</label>
+                                                <textarea rows="5" class="form-control border-input" placeholder="Here can be your description" value="Mike">Oh so, your weak rhyme
+You doubt I'll bother, reading into it
+I'll probably won't, left to my own devices
+But that's the difference in our opinions.</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-info btn-fill btn-wd">Add Enumerators</button> &nbsp;&nbsp;&nbsp;<button id="close" class="btn btn-info btn-fill btn-wd">Close</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+         <div class="content">
+            <div class="container-fluid">
+                <div class="card card-map">
+                    <div class="header">
+                        <h4 class="title">Welfare Officers Locations : </h4>
+                    </div>
+                    <div class="map">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+
+                        <li>
+                            <a href="http://www.edge.com.bd/">
+                                Edge Consulting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.edge.com.bd/index.php/main/current_protfolio">
+                               Current Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.creative-tim.com/license">
+                                Licenses
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright pull-right">
+                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Edge Consulting</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="assets/js/bootstrap-checkbox-radio.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+	<script src="assets/js/paper-dashboard.js"></script>
+
+	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+
+             demo.initGoogleMaps2();
+
+            $( "#btn-1-id" ).hide();
+            $( "#btn-2-id" ).hide();
+            $( "#btn-3-id" ).hide();
+            $( "#add_user_id" ).hide();
+
+
+        $( "#btn-1" ).click(function() {
+            $( "#btn-2-id" ).hide();
+            $( "#btn-3-id" ).hide();
+            $( "#btn-1-id" ).fadeIn(); 
+                            
+            });
+        $( "#btn-2" ).click(function() {
+            $( "#btn-1-id" ).hide();
+            $( "#btn-3-id" ).hide();
+            $( "#btn-2-id" ).fadeIn(); 
+                            
+            });
+        $( "#btn-3" ).click(function() {
+            $( "#btn-2-id" ).hide();
+            $( "#btn-1-id" ).hide();
+            $( "#btn-3-id" ).fadeIn(); 
+                            
+            });
+
+        $( "#add_user" ).click(function() {
+                $( "#add_user_id" ).fadeIn(); 
+                            
+            });
+
+        $( "#close" ).click(function() {
+                $( "#add_user_id" ).fadeOut(); 
+                            
+            });
+            // $.notify({
+         //     icon: 'ti-gift',
+         //     message: "Welcome to <b>Paper Dashboard</b> - a beautiful Bootstrap freebie for your next project."
+
+         //    },{
+         //        type: 'success',
+         //        timer: 4000
+         //    });
+
+        });
+    </script>
+
+</html>
